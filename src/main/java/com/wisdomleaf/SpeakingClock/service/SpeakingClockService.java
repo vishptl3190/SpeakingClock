@@ -17,7 +17,7 @@ public class SpeakingClockService implements SpeakingClockImpl {
 
         try {
 
-            if (bean == null) {
+            if (bean.getInput_time() == null) {
                 respBean.setErrorCode(100);
                 respBean.setErrorMessage("Input is null, please enter proper time.");
                 return respBean;

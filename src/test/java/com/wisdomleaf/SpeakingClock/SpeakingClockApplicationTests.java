@@ -29,7 +29,7 @@ class SpeakingClockApplicationTests {
 		RequestBean reqBean =new RequestBean();
 		reqBean.setInput_time(null);
 		ResponseBean resBean = service.processTime(reqBean);
-		System.out.println(resBean.getErrorMessage());
+//		System.out.println(resBean.getErrorMessage());
 		Assert.hasText("Input is null, please enter proper time.",resBean.getErrorMessage());
 	}
 
